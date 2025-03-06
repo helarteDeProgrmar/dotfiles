@@ -89,6 +89,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
+alias pof='poweroff'
+alias :q='exit'
 alias ls='ls --color'
 alias lla='ls -lah'
 alias nvim='nvim'
