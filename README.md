@@ -1,6 +1,6 @@
 # Clone
 
-`git clone --recurse-submodules git@github.com:jaimeferj/dotfiles.git`
+`git clone --recurse-submodules git@github.com:helarteDeProgrmar/dotfiles.git`
 
 # Dependencies:
 
