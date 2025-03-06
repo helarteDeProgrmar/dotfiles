@@ -1,0 +1,19 @@
+[core]
+	editor = nvim
+
+[url "git@github.com:helarteDeProgrmar/"]
+  insteadOf = "gh:"
+
+[user]
+	email = ruben.gbenito@alumnos.upm.es
+	name = Rubén García-Patos Benito
+[merge]
+	tool = nvimdiff
+	conflictstyle = diff3
+[push]
+	autoSetupRemote = true
+
+[includeIf "gitdir:~/work/**"]
+  path = ~/work/.gitconfig
+[init]
+	defaultBranch = main
