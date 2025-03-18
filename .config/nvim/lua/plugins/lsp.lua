@@ -210,6 +210,32 @@ return {
         -- postgres_lsp = {
         --   filetypes = { 'sql' },
         -- },
+
+        -- Haskell (hls)
+        hls = {
+          filetypes = { 'haskell', 'lhaskell', 'cabal' },
+          settings = {
+            haskell = {
+              formattingProvider = 'fourmolu', -- o brittany, fourmolu, etc.
+              checkProject = true, -- Opcional: activa validaciones en el proyecto
+              -- Puedes agregar más configuraciones si las necesitas
+            },
+          },
+        },
+
+        -- Elixir (elixirls)
+        elixirls = {
+          cmd = { 'elixir-ls' }, -- Asegúrate de que 'elixir-ls' esté en tu $PATH
+          filetypes = { 'elixir', 'eelixir', 'heex', 'surface' },
+          settings = {
+            elixirLS = {
+              -- Ajusta según tu preferencia
+              dialyzerEnabled = false,
+              fetchDeps = false,
+              -- Puedes activar `enableTestLenses` y otras opciones si lo deseas
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
@@ -226,6 +252,10 @@ return {
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'markdownlint',
+        'haskell-language-server', -- LSP para Haskell
+        'elixir-ls', -- LSP para Elixir
+        'fourmolu', -- Formateador para Haskell
+        'hlint', -- Linter para Haskell
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
