@@ -33,3 +33,9 @@ set_keymap('n', '<leader>xx', ':.lua<CR>')
 set_keymap('n', '<leader>j', '<cmd>cnext<cr>', { desc = 'Go to next quickfix' })
 set_keymap('n', '<leader>k', '<cmd>cprev<cr>', { desc = 'Go to previous quickfix' })
 set_keymap('v', '<Leader>p', '"_dP', { desc = 'Delete to register _' })
+
+-- Pane resizing mappings
+set_keymap('n', '<C-w>>', ':vertical resize +2<CR>')
+set_keymap('n', '<C-w><', ':vertical resize -2<CR>')
+set_keymap('n', '<C-w>+', ':resize +2<CR>')
+set_keymap('n', '<C-w>-', ':resize -2<CR>')
