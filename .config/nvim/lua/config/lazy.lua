@@ -24,7 +24,10 @@ require('lazy').setup {
   spec = spec,
   install = { colorscheme = { 'habamax' } },
   checker = { enabled = true },
-  change_detection = { notify = false },
+  change_detection = {
+    enabled = true,
+    notify = false,
+  },
   concurrency = 2,
   {
     ui = {
