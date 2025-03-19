@@ -1,5 +1,9 @@
 return {
   {
+    'ThePrimeagen/vim-be-good',
+    cmd = 'VimBeGood',
+  },
+  {
     'ellisonleao/dotenv.nvim',
     event = 'VeryLazy',
     opts = {},
