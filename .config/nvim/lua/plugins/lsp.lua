@@ -256,6 +256,7 @@ return {
         'elixir-ls', -- LSP para Elixir
         'fourmolu', -- Formateador para Haskell
         'hlint', -- Linter para Haskell
+        'rust_analyzer',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
