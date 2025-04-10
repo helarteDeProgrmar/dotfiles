@@ -115,7 +115,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$PATH:$HOME/.node/bin"
 
-export PATH=$PATH:/home/jfj/.spicetify
+export PATH=$PATH:/home/rgpb/.spicetify
 
 # Set neovim as the default editor
 export EDITOR=nvim
