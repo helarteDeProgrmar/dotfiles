@@ -125,3 +125,22 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 [ -f "/home/rgpb/.ghcup/env" ] && . "/home/rgpb/.ghcup/env" # ghcup-envexport PATH="$HOME/.ghcup/bin:$PATH"
+
+
+# Avoid warning message
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# Automatice task
+FLAG_FILE="$HOME/usrtmp/.task_daily_done"
+LOGS_FILE="$HOME/usrtmp/daily.logs"
+BIN_FILE="$HOME/personal/run_task_daily.sh"
+
+if [ ! -f "$FLAG_FILE" ] || [ "$(date +%Y-%m-%d)" != "$(cat $FLAG_FILE)" ]; then
+    echo "Running daily task: $(date +%Y-%m-%d)" >> "$LOGS_FILE"
+    if [ -f "$BIN_FILE" ]; then
+      bash "$BIN_FILE"
+    fi
+    date +%Y-%m-%d > "$FLAG_FILE"
+else
+    echo "Task already ran today" >> "$LOGS_FILE"
+fi
