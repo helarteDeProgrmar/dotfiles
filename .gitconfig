@@ -15,5 +15,6 @@
 
 [includeIf "gitdir:~/work/**"]
   path = ~/work/.gitconfig
+
 [init]
 	defaultBranch = main
