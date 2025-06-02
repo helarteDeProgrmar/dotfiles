@@ -104,6 +104,10 @@ alias bat=batcat
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+# asdf
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
+
 # Paths
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH=$HOME/go
