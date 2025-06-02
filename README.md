@@ -10,6 +10,7 @@ If you want the same as my start:
 `git clone --recurse-submodules git@github.com:helarteDeProgrmar/dotfiles.git`
 2. Install the dependencies.
 3. Install a font: [link to install](https://www.nerdfonts.com/font-downloads)
+    Put the `*.ttf` in `~/.local/share/fonts`
 4. Finish the configuration
 
 # Dependencies:
