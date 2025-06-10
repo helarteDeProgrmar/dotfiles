@@ -3,6 +3,10 @@
 # brave
 curl -fsS https://dl.brave.com/install.sh | sh
 
+# latex
+sudo dnf install texlive
+# sudo dnf install texlive-scheme-full
+
 # asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 
