@@ -6,13 +6,14 @@ curl -fsS https://dl.brave.com/install.sh | sh
 # latex
 sudo dnf install texlive
 # sudo dnf install texlive-scheme-full
+sudo dnf install just
 
 # asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 
 source ~/.zshrc
 
-# python, c, c++, java 
+# python, c, c++, java
 # fedora included it
 
 # install elixir
