@@ -24,3 +24,8 @@ asdf install elixir 1.18.4-otp-27
 
 # install haskell
 sudo dnf install ghc cabal-install
+
+# install gnome plugins
+# sudo apt-get install gnome-browser-connector
+# sudo apt-get install gnome-browser-connector
+sudo apt install gnome-shell-extension-manager
