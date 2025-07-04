@@ -99,7 +99,7 @@ alias aenv='source .venv/bin/activate'
 alias cenv='python -m venv .venv'
 alias denv='rm -r -I -v .venv'
 alias bat=batcat
-alias xclipp='xclip -sel clip'
+alias xsell='xsel --clipboard'
 
 # Shell integrations
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
