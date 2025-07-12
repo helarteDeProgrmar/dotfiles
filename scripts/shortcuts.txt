@@ -31,13 +31,16 @@ enable-animations=false
 enable-hot-corners=false
 
 [notifications]
-application-children=['org-mozilla-firefox', 'org-gnome-nautilus', 'org-gnome-software', 'gnome-power-panel']
+application-children=['org-mozilla-firefox', 'org-gnome-nautilus', 'org-gnome-software', 'gnome-power-panel', 'org-gnome-ptyxis']
 
 [notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
 [notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[notifications/application/org-gnome-ptyxis]
+application-id='org.gnome.Ptyxis.desktop'
 
 [notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
@@ -52,11 +55,12 @@ report-technical-problems=true
 move-to-workspace-1=['<Shift><Super>u']
 move-to-workspace-2=['<Shift><Super>i']
 move-to-workspace-3=['<Shift><Super>o']
-move-to-workspace-4=['<Shift><Super>p']
+move-to-workspace-4=['<Shift><Super>k']
+move-to-workspace-last=['<Shift><Super>l']
 switch-to-workspace-1=['<Super>u']
 switch-to-workspace-2=['<Super>i']
 switch-to-workspace-3=['<Super>o']
-switch-to-workspace-4=['<Super>p']
+switch-to-workspace-4=['<Super>k']
 switch-to-workspace-last=['<Super>l']
 
 [wm/preferences]
