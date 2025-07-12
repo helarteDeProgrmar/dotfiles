@@ -4,7 +4,7 @@
 mkdir -p ~/usrtmp/ ~/personal/ ~/work/ ~/studies
 
 # clone repos
-clone_repos.sh
+./clone_repos.sh
 
 # install tools
-install_tools.sh
+# install_tools.sh
