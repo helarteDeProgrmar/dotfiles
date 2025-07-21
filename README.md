@@ -27,3 +27,7 @@ If you want the same as my start:
 - On dotfiles: `stow .`
 - `chsh -s /bin/zsh`
 - Do: `tmux` and execute `ctrl+space I` to install plugins
+
+# References
+
+Code configuration in develop from `https://github.com/nvim-lua/kickstart.nvim`
