@@ -102,7 +102,7 @@ alias bat=batcat
 alias xsell='xsel --clipboard'
 
 # Shell integrations
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/share/fzf/shell/key-bindings.zsh ] && source /usr/share/fzf/shell/key-bindings.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
 # asdf
