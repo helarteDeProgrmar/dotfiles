@@ -104,6 +104,11 @@ vim.o.number = true
 --  Experiment for yourself to see if you like it!
 vim.o.relativenumber = true
 
+local function set_line_number_colors()
+	vim.api.nvim_set_hl(0, "LineNr", { fg = "#ff8800", bg = "NONE" }) -- relativas
+	vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ffff00", bg = "NONE", bold = true }) -- actual
+end
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = "a"
 
@@ -915,6 +920,7 @@ require("lazy").setup({
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
 			vim.cmd.colorscheme("tokyonight-night")
+			set_line_number_colors()
 		end,
 	},
 
