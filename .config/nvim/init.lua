@@ -171,8 +171,8 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
--- Print column 81 to mark the limit
-vim.opt.colorcolumn = "81"
+-- Print column 80 to mark the limit
+vim.opt.colorcolumn = "80,90,100"
 vim.opt.termguicolors = true
 vim.api.nvim_create_autocmd("ColorScheme", {
 	callback = function()
