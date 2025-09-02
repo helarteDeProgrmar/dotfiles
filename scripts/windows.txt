@@ -48,6 +48,16 @@ application-id='org.gnome.Software.desktop'
 [notifications/application/org-mozilla-firefox]
 application-id='org.mozilla.firefox.desktop'
 
+[peripherals/keyboard]
+numlock-state=false
+
+[peripherals/mouse]
+accel-profile='default'
+speed=1.0
+
+[peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
 [privacy]
 report-technical-problems=true
 
@@ -57,11 +67,15 @@ move-to-workspace-2=['<Shift><Super>i']
 move-to-workspace-3=['<Shift><Super>o']
 move-to-workspace-4=['<Shift><Super>k']
 move-to-workspace-last=['<Shift><Super>l']
+switch-applications=['<Alt>less']
+switch-applications-backward=['<Shift><Alt>less']
 switch-to-workspace-1=['<Super>u']
 switch-to-workspace-2=['<Super>i']
 switch-to-workspace-3=['<Super>o']
 switch-to-workspace-4=['<Super>k']
 switch-to-workspace-last=['<Super>l']
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
 
 [wm/preferences]
 num-workspaces=5

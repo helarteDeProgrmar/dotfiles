@@ -1,12 +1,15 @@
 [color]
+night-light-enabled=false
 night-light-schedule-automatic=false
 
 [media-keys]
 control-center=['<Shift><Control>s']
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+home=['<Shift><Control>h']
 reboot=['<Shift><Control>w']
 screensaver=['<Shift><Super>apostrophe']
 shutdown=['<Shift><Control>q']
+www=['<Shift><Control>b']
 
 [media-keys/custom-keybindings/custom0]
 binding='<Control><Alt>t'
