@@ -110,6 +110,7 @@ eval "$(zoxide init --cmd cd zsh)"
 . "$HOME/.asdf/completions/asdf.bash"
 
 # Paths
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH=$HOME/go
 export PATH="$PATH:$GOPATH/bin"
