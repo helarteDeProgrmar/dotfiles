@@ -69,7 +69,7 @@ bindkey '^e' edit-command-line
 
 
 # History
-HISTSIZE=5000
+HISTSIZE=20000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
