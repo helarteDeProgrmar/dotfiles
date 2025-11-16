@@ -1,0 +1,7 @@
+show=drun
+prompt=Buscar...
+width=40%
+height=50%
+location=center
+columns=1
+lines=10
