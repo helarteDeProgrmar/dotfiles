@@ -21,20 +21,43 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
 
+[background]
+picture-options='zoom'
+picture-uri='file:///home/rgpb/dotfiles/wallpapers/gnome-lune-dark.jpg'
+picture-uri-dark='file:///home/rgpb/dotfiles/wallpapers/gnome-lune-dark.jpg'
+
+[break-reminders/eyesight]
+play-sound=true
+
+[break-reminders/movement]
+duration-seconds=uint32 300
+interval-seconds=uint32 1800
+play-sound=true
+
 [input-sources]
 current=uint32 0
-sources=[('xkb', 'es')]
+mru-sources=[('xkb', 'es'), ('xkb', 'us')]
+sources=[('xkb', 'es'), ('xkb', 'us')]
 
 [interface]
 color-scheme='prefer-dark'
-enable-animations=false
+enable-animations=true
 enable-hot-corners=false
 
 [notifications]
-application-children=['org-mozilla-firefox', 'org-gnome-nautilus', 'org-gnome-software', 'gnome-power-panel', 'org-gnome-ptyxis']
+application-children=['org-mozilla-firefox', 'org-gnome-nautilus', 'org-gnome-software', 'gnome-power-panel', 'org-gnome-ptyxis', 'org-pwmt-zathura', 'com-mattjakeman-extensionmanager', 'org-gnome-settings', 'org-gnome-clocks', 'gnome-printers-panel']
+
+[notifications/application/com-mattjakeman-extensionmanager]
+application-id='com.mattjakeman.ExtensionManager.desktop'
 
 [notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[notifications/application/gnome-printers-panel]
+application-id='gnome-printers-panel.desktop'
+
+[notifications/application/org-gnome-clocks]
+application-id='org.gnome.clocks.desktop'
 
 [notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -42,11 +65,17 @@ application-id='org.gnome.Nautilus.desktop'
 [notifications/application/org-gnome-ptyxis]
 application-id='org.gnome.Ptyxis.desktop'
 
+[notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
 [notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
 [notifications/application/org-mozilla-firefox]
 application-id='org.mozilla.firefox.desktop'
+
+[notifications/application/org-pwmt-zathura]
+application-id='org.pwmt.zathura.desktop'
 
 [peripherals/keyboard]
 numlock-state=false
@@ -56,12 +85,18 @@ accel-profile='default'
 speed=1.0
 
 [peripherals/touchpad]
+send-events='enabled'
 two-finger-scrolling-enabled=true
 
 [privacy]
 report-technical-problems=true
 
+[search-providers]
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
 [wm/keybindings]
+close=['<Super>c']
+maximize=['<Super>r']
 move-to-workspace-1=['<Shift><Super>u']
 move-to-workspace-2=['<Shift><Super>i']
 move-to-workspace-3=['<Shift><Super>o']
